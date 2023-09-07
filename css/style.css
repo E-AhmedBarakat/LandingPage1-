@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+
+/* start header */
+.header {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header .container .imgg {
+    position: absolute;
+    width: 850px;
+    left: 80px;
+    top: -300px;
+    z-index: -3;
+}
+
+.header .container ul {
+    display: flex;
+    flex: 1;
+
+}
+
+.header .container ul li {
+    margin: 0 30px 0 0;
+    color: #343434;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.header .container ul li:hover {
+    background-color: #29c590;
+    font-weight: bold;
+}
+
+.header .container img {
+    width: 150px;
+}
+
+.header .container input {
+    width: 15%;
+    border-radius: 50px;
+    border: none;
+    background-color: #c7c8c8;
+    box-shadow: 0 0 13px 1px #aeafaf inset;
+    height: 40px;
+    padding: 20px;
+}
+
+.header .container input:focus {
+    outline: none;
+
+}
+
+.header .container .icon {
+    position: relative;
+}
+
+.header .container svg {
+    position: absolute;
+    left: -24px;
+    top: -8px;
+    color: #747575;
+}
+
+/* end header */
+/* start landing */
+.landing {
+    min-height: 100vh;
+    background-image: url('../image/bacgroundimge.png');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing .container {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -10;
+
+}
+
+.landing .container .leftside {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    width: 30%;
+    position: relative;
+
+}
+
+.landing .container .leftside img {
+    position: absolute;
+    left: -50px;
+    top: 190px;
+    width: 1000px;
+    filter: grayscale(100%);
+    z-index: 5;
+}
+
+.landing .container .leftside .circt2 {
+    filter: grayscale(0%);
+    z-index: 1;
+    width: 1500px;
+    left: -550px;
+    top: 260px;
+}
+
+.landing .container .leftside .box {
+    z-index: 3;
+}
+
+.landing .container .leftside .box:first-child {
+    height: 60%;
+}
+
+.landing .container .leftside .box p:first-child {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 1;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.landing .container .leftside .box p:last-child {
+    margin-top: 127px;
+}
+
+.landing .container .leftside .box:last-child {
+    margin-top: 140px;
+}
+
+.landing .container .leftside .box .links {
+    display: flex;
+    gap: 20px;
+}
+
+.landing .container .leftside .box .links a {
+    margin-bottom: 10px;
+}
+
+.landing .container .leftside .box .links a svg {
+    font-size: 45px;
+    color: black;
+}
+
+.landing .container .leftside .box span {
+    display: block;
+    margin-top: 10px;
+}
+
+.landing .container .leftside .box span:first-of-type {
+    margin-top: 0px;
+}
+
+.landing .container .leftside .box span:last-child {
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.landing .container .rightside {
+    height: calc(100vh - 100px);
+    padding-left: 30px;
+    width: 45%;
+}
+
+.landing .container .rightside p:first-child {
+    margin: 50px 0 0;
+    font-size: 25px;
+}
+
+.landing .container .rightside p:nth-child(2) {
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin: 40px 0;
+
+}
+
+.landing .container .rightside .links {
+    display: flex;
+    padding-left: 50px;
+    margin: 100px 0 100px;
+}
+
+.landing .container .rightside .links a {
+    background-color: transparent;
+    color: black;
+    margin-right: 50px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s;
+    color: black;
+
+}
+
+.landing .container .rightside .links a:hover {
+    background-color: black;
+    color: white;
+}
+
+.landing .container .rightside p:nth-child(4) {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    padding-left: 75px;
+}
+
+.landing .container .rightside p:nth-child(5) {
+    margin-top: 40px;
+    padding-left: 146px;
+    font-weight: bold;
+}
+
+/* end landing */
