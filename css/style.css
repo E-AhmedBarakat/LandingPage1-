@@ -231,6 +231,7 @@ ul {
     height: calc(100vh - 100px);
     padding-left: 30px;
     width: 45%;
+    z-index: 10;
 }
 
 .landing .container .rightside p:first-child {
